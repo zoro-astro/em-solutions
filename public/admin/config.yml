@@ -1,24 +1,24 @@
 backend:
   name: github
-  repo: zoro-astro/em-solutions
+  repo: zoro-astro/em-solutions # IMPORTANT: You already have the correct repo here!
   branch: main
 
-media_folder: "src/assets/images/posts"
-public_folder: "/assets/images/posts"
+media_folder: 'src/assets/images/posts'
+public_folder: '/assets/images/posts'
 
 collections:
-  - name: "post"
-    label: "Post"
-    folder: "src/content/post"
+  - name: 'post'
+    label: 'Post'
+    folder: 'src/content/post'
     create: true
-    slug: "{{slug}}" # Uses the "Slug" field for the URL
+    slug: '{{slug}}' # Uses the "Slug" field for the URL
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Slug (this is the URL)", name: "slug", widget: "string" }
-      - { label: "Publish Date", name: "publishDate", widget: "datetime" }
-      - { label: "Category", name: "category", widget: "string", default: "uncategorized" }
-      - { label: "Author", name: "author", widget: "string", default: "Admin" }
-      - { label: "Excerpt (Short Summary)", name: "excerpt", widget: "string", required: false }
-      - { label: "Thumbnail Image", name: "image", widget: "image", required: false }
-      - { label: "Make this a Draft?", name: "draft", widget: "boolean", default: false }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Slug (this is the URL)', name: 'slug', widget: 'string' }
+      - { label: 'Publish Date', name: 'publishDate', widget: 'datetime' }
+      - { label: 'Category', name: 'category', widget: 'string', default: 'uncategorized' }
+      - { label: 'Author', name: 'author', widget: 'string', default: 'Admin' }
+      - { label: 'Excerpt (Short Summary)', name: 'excerpt', widget: 'string', required: false }
+      - { label: 'Thumbnail Image', name: 'image', widget: 'image', required: false }
+      - { label: 'Make this a Draft?', name: 'draft', widget: 'boolean', default: false }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
